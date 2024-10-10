@@ -38,7 +38,6 @@ The easiest way to run and debug the project is to:
 
 Once the application starts:
  - Open a browser to the location specified in Terminal (e.g. http://localhost:8080"). This takes you to the web form.
-     - The output in the terminal window provides the URL of the web application (e.g. http://localhost:8080").
  - Enter values in the fields and press the Insert button.
  - Switch to Visual Studio Code and watch the Terminal window (the app has tracing code added).
    
