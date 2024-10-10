@@ -7,13 +7,16 @@ The application has a single form with two input fields. Enter values in the fie
 **Configuration instructions**
 1. Create a Fabric SQL Data Warehouse.
 2. Create a table in the Fabric SQL Data Warehouse:
-    CREATE TABLE [SQL Data Warehouse 01].[dbo].[YourTable]
+
+```sql
+CREATE TABLE [SQL Data Warehouse 01].[dbo].[YourTable]
   (
   	[Id] [int]  NOT NULL,
   	[Field1] [varchar](100)  NULL,
   	[Field2] [varchar](100)  NULL
   )
-  GO
+GO
+```
 
    Note: This assumes that the SQL Data Warehouse is named "SQL Data Warehouse 01".
          IF you change the name of the warehouse, table name, or field values, must update the source code accordingly.
@@ -32,22 +35,21 @@ Once the application starts:
  - Go to Visual Studio Code and watch the Terminal window (the app has tracing enabled).
 
    - Successful tracing looks similar to the following:
+``` markdown
+info: MyWebApp.Controllers.YourController[0]
+    UpdateForm GET method called.
+info: MyWebApp.Controllers.YourController[0]
+    Insert POST method called.
+info: MyWebApp.Controllers.YourController[0]
+    Model is valid. Field1: First Name, Field2: Last Name
 
-      info: MyWebApp.Controllers.YourController[0]
-            UpdateForm GET method called.
-      info: MyWebApp.Controllers.YourController[0]
-            Insert POST method called.
-      info: MyWebApp.Controllers.YourController[0]
-            Model is valid. Field1: First Name, Field2: Last Name
-      info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
       
-            SET NOCOUNT ON;
-            INSERT INTO [YourTable] ([Id], [Field1], [Field2])
-            VALUES (@p0, @p1, @p2);
-      info: MyWebApp.Controllers.YourController[0]
-            Database insert successful.
-      info: MyWebApp.Controllers.YourController[0]
-            UpdateForm GET method called.
-
-**License**
-MIT License
+    SET NOCOUNT ON;
+    INSERT INTO [YourTable] ([Id], [Field1], [Field2])
+        VALUES (@p0, @p1, @p2);
+        info: MyWebApp.Controllers.YourController[0]
+    Database insert successful.
+        info: MyWebApp.Controllers.YourController[0]
+    UpdateForm GET method called.
+```
