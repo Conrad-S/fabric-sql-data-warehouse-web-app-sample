@@ -2,9 +2,11 @@
 
 This is a sample .NET CORE web application that adds rows to a table in a Microsoft Fabric SQL Data Warehouse.
 
+
 **Features**
 
 The application has a single form with two input fields. Enter values in the fields, press the Insert button, and the values are added to the Fabric SQL Data Warehouse table.
+
 
 **Configuration instructions**
 
@@ -25,6 +27,7 @@ GO
 Note: If you change any entity names, update the source code accordingly.
    
 4. Update appsettings.json with the connection string to your Fabric SQL Data Warehouse.
+   
 
 **Run and Debug**
 
