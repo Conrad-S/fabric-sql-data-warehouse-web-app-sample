@@ -1,0 +1,13 @@
+@model MyWebApp.Models.YourModel
+
+<form asp-action="Insert" method="post">
+    <div>
+        <label for="Field1">Field1:</label>
+        <input type="text" id="Field1" asp-for="Field1" />
+    </div>
+    <div>
+        <label for="Field2">Field2:</label>
+        <input type="text" id="Field2" asp-for="Field2" />
+    </div>
+    <button type="submit">Insert</button>
+</form>
