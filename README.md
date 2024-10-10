@@ -29,7 +29,7 @@ GO
 **Run and Debug**
 
 The easiest way to run and debug the project is to:
- - Clone the project into a folder on your local machine (or open in GitHub Code Spaces)
+ - Clone the project into a folder on your local machine (or open in GitHub Codespaces)
  - Open the project in Visual Studio Code
  - Open a Bash Terminal Window
  - Type: dotnet run
