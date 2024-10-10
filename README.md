@@ -33,12 +33,12 @@ The easiest way to run and debug the project is to:
  - Open the project in Visual Studio Code
  - Open a Bash Terminal Window
  - Type: dotnet run
- - The output in the terminal window provides the URL of the web application (e.g. http://localhost:8080").
    
 <img src="https://github.com/user-attachments/assets/e8eb2b8f-0bd1-459d-b7b7-7d13d1e38d0e" alt="description" width="305" height="221" style="border:1000px solid black;"/>
 
 Once the application starts:
  - Open a browser to the location specified in Terminal (e.g. http://localhost:8080"). This takes you to the web form.
+     - The output in the terminal window provides the URL of the web application (e.g. http://localhost:8080").
  - Enter values in the fields and press the Insert button.
  - Switch to Visual Studio Code and watch the Terminal window (the app has tracing code added).
    
