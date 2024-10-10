@@ -29,7 +29,8 @@ GO
 **Run and Debug**
 
 The easiest way to run and debug the project is to:
- - Open the project in Visual Studio Code (git clone)
+ - Clone the project into a folder on your local machine (or open in GitHub Code Spaces)
+ - Open the project in Visual Studio Code
  - Open a Bash Terminal Window
  - Type: dotnet run
  - The output provide the URL of the web application (e.g. http://localhost:8080").
