@@ -5,8 +5,10 @@ This is a sample .NET CORE web application that adds rows to a table in a Micros
 The application has a single form with two input fields. Enter values in the fields, press the Insert button, and the values are added to the Fabric SQL Data Warehouse table.
 
 **Configuration instructions**
-1. Create a Fabric SQL Data Warehouse.
-2. Create a table in the Fabric SQL Data Warehouse:
+If you use naming different than the names below, update the source code accordingly.
+
+1. Create a Fabric SQL Data Warehouse named "SQL Data Warehouse 01".
+2. Create a table in the Fabric SQL Data Warehouse named "YourTable", with two fields (Field1, Field2):
 
 ```sql
 CREATE TABLE [SQL Data Warehouse 01].[dbo].[YourTable]
@@ -17,10 +19,7 @@ CREATE TABLE [SQL Data Warehouse 01].[dbo].[YourTable]
   )
 GO
 ```
-
-   Notes: 
-    - The sample assumes that the SQL Data Warehouse is named "SQL Data Warehouse 01".
-      If you change the name of the warehouse, table name, or field values, update the source code accordingly.
+Note: If you change any entity names, update the source code accordingly.
    
 4. Update appsettings.json with the connection string to your Fabric SQL Data Warehouse.
 
