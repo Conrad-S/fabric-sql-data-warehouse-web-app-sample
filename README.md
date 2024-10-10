@@ -23,7 +23,6 @@ CREATE TABLE [SQL Data Warehouse 01].[dbo].[YourTable]
   )
 GO
 ```
-  Note: If you change any entity names, update the source code accordingly.
    
 4. Update appsettings.json with the connection string to your Fabric SQL Data Warehouse.  
 
