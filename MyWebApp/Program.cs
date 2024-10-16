@@ -1,24 +1,33 @@
-using MyWebApp.Data;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
+using MyWebApp.Data;
+using Microsoft.Data.SqlClient;
+
+var connectionString = "Server=x6eps4xrq2xudenlfv6naeo3i4-hq2ehbsctyvu7npl3u5xrg4hfq.msit-datawarehouse.fabric.microsoft.com,1433;Initial Catalog=SQL Data Warehouse 01;Authentication=Active Directory Interactive;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+
+try
+{
+    using (var connection = new SqlConnection(connectionString))
+    {
+        connection.Open();
+        Console.WriteLine("Connection successful!");
+    }
+}
+catch (Exception ex)
+{
+    Console.WriteLine($"Connection failed: {ex.Message}");
+}
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-// Configure logging
-builder.Logging.ClearProviders();
-builder.Logging.AddConsole();
-
-// Configure the database context
+// Register YourDbContext with the dependency injection container
 builder.Services.AddDbContext<YourDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"), sqlOptions =>
-        sqlOptions.EnableRetryOnFailure()));
+    options.UseSqlServer(connectionString));
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");

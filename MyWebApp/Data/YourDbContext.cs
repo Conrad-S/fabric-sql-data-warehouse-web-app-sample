@@ -15,6 +15,11 @@ namespace MyWebApp.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<YourEntity>().ToTable("YourTable");
+            modelBuilder.Entity<YourEntity>()
+                .Property(e => e.Id)
+                .ValueGeneratedOnAdd();
         }
+
+        // Removed the OnConfiguring method that adds the SqlServerSaveChangesInterceptor
     }
 }
