@@ -4333,11 +4333,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ConradDev\\fabric-sql-data-warehouse-web-sample\\MyWebApp\\MyWebApp.csproj",
+      "projectUniqueName": "C:\\ConradDev\\fabric-sql-data-warehouse-web-app-sample\\MyWebApp\\MyWebApp.csproj",
       "projectName": "MyWebApp",
-      "projectPath": "C:\\ConradDev\\fabric-sql-data-warehouse-web-sample\\MyWebApp\\MyWebApp.csproj",
+      "projectPath": "C:\\ConradDev\\fabric-sql-data-warehouse-web-app-sample\\MyWebApp\\MyWebApp.csproj",
       "packagesPath": "C:\\Users\\conradscott\\.nuget\\packages\\",
-      "outputPath": "C:\\ConradDev\\fabric-sql-data-warehouse-web-sample\\MyWebApp\\obj\\",
+      "outputPath": "C:\\ConradDev\\fabric-sql-data-warehouse-web-app-sample\\MyWebApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

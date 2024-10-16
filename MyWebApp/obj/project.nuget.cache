@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Pt7HZhxRBvc=",
+  "dgSpecHash": "aLAl+oIOQ+k=",
   "success": true,
-  "projectFilePath": "C:\\ConradDev\\fabric-sql-data-warehouse-web-sample\\MyWebApp\\MyWebApp.csproj",
+  "projectFilePath": "C:\\ConradDev\\fabric-sql-data-warehouse-web-app-sample\\MyWebApp\\MyWebApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\conradscott\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\conradscott\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

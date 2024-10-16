@@ -2,7 +2,10 @@ using Microsoft.EntityFrameworkCore;
 using MyWebApp.Data;
 using Microsoft.Data.SqlClient;
 
-var connectionString = "Server=x6eps4xrq2xudenlfv6naeo3i4-hq2ehbsctyvu7npl3u5xrg4hfq.msit-datawarehouse.fabric.microsoft.com,1433;Initial Catalog=SQL Data Warehouse 01;Authentication=Active Directory Interactive;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+var builder = WebApplication.CreateBuilder(args);
+
+// Get the connection string from appsettings.json 
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
 try
 {
@@ -16,8 +19,6 @@ catch (Exception ex)
 {
     Console.WriteLine($"Connection failed: {ex.Message}");
 }
-
-var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
