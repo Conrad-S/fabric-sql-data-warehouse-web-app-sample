@@ -32,7 +32,7 @@ If you use a different table definition, update the source code accordingly.
 
 The easiest way to run and debug the project is to:
  - Clone the project into a folder on your local machine (or open in GitHub Codespaces)
- - Open the project in Visual Studio Code
+ - Open the folder in Visual Studio Code
  - Follow the steps listed above to set the connection string.
  - Open a Bash Terminal Window
  - Type: dotnet run
