@@ -40,7 +40,7 @@ The easiest way to run and debug the project is to:
 Once the application starts:
  - Open a browser to the location specified in Terminal (e.g. http://localhost:8080"). This takes you to the web form.
 
- <img src="https://github.com/user-attachments/assets/a157e1be-5c43-42bb-ad06-75eba903eb2c" alt="description" width="381" height="276" style="border:1000px solid black;"/>
+ <img src="https://github.com/user-attachments/assets/a157e1be-5c43-42bb-ad06-75eba903eb2c" alt="description" width="476" height="345" style="border:1000px solid black;"/>
 
  The simplest way to use the sample application is to go step by step (add a row, display rows, update a row).
  
