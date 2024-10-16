@@ -4,7 +4,7 @@ This is a sample .NET CORE web application that interacts with a Microsoft Fabri
 
 **Features**
 
-The application has a single form with three sections, that can be run in a stepwise fashion:
+The application has a single form with three sections that can be run in a stepwise fashion:
 
 - Step 1: Add Record - Fill out the fields, press the Insert button, and the values are added as a new row in the table.
 - Step 2: Retrieve Records - Click the button to display the rows in the table. The list is refreshed when a row is added or updated.
