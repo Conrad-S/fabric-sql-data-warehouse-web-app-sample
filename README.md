@@ -1,6 +1,6 @@
 **Project description**
 
-This is a sample .NET CORE web application that interacts with a Microsoft Fabric SQL Data Warehouse. The sample has functionality to add, update, and display the rows of a table in a Fabric SQL Data warehoues. 
+This is a sample .NET CORE web application that interacts with a Microsoft Fabric SQL Data Warehouse. The sample has functionality to add, update, and display the rows of a table in a Fabric SQL Data warehouse. 
 
 **Features**
 
