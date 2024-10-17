@@ -42,6 +42,7 @@ Once the application starts:
 
  <img src="https://github.com/user-attachments/assets/a157e1be-5c43-42bb-ad06-75eba903eb2c" alt="description" width="476" height="345" style="border:1000px solid black;"/>
 
+
  The simplest way to use the sample application is to go step by step (add a row, display rows, update a row).
  
  As you perform each step, switch to Visual Studio Code and watch the Terminal window (the app has signficant tracing code).
